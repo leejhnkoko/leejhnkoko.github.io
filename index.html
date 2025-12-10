@@ -39,7 +39,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated Background */
         .bg-pattern {
             position: fixed;
             top: 0;
@@ -68,7 +67,6 @@
             background-size: 60px 60px;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -129,7 +127,6 @@
             width: 100%;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -233,7 +230,6 @@
             background: rgba(74, 158, 255, 0.1);
         }
 
-        /* Floating Elements */
         .floating-element {
             position: absolute;
             border-radius: 50%;
@@ -264,7 +260,6 @@
             50% { transform: translate(20px, -30px); }
         }
 
-        /* Section Styles */
         section {
             padding: 6rem 3rem;
             max-width: 1200px;
@@ -291,7 +286,6 @@
             font-weight: 600;
         }
 
-        /* About Section */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -362,7 +356,6 @@
             font-size: 0.95rem;
         }
 
-        /* Education Section */
         .timeline {
             position: relative;
             padding-left: 2rem;
@@ -434,7 +427,6 @@
             margin-top: 0.8rem;
         }
 
-        /* Research Section */
         .research-cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -494,7 +486,6 @@
             font-size: 0.95rem;
         }
 
-        /* Skills Section */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -534,7 +525,6 @@
             transform: translateY(-2px);
         }
 
-        /* Contact Section */
         .contact-container {
             text-align: center;
             max-width: 600px;
@@ -572,7 +562,6 @@
             font-size: 1.3rem;
         }
 
-        /* Footer */
         footer {
             padding: 3rem;
             text-align: center;
@@ -584,7 +573,6 @@
             font-size: 0.9rem;
         }
 
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -596,7 +584,6 @@
             }
         }
 
-        /* Scroll Animations */
         .fade-in {
             opacity: 0;
             transform: translateY(40px);
@@ -608,7 +595,6 @@
             transform: translateY(0);
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             .hero h1 {
                 font-size: 3rem;
@@ -664,7 +650,6 @@
     <div class="bg-pattern"></div>
     <div class="grid-overlay"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">JH Lee</div>
         <ul class="nav-links">
@@ -676,7 +661,6 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="floating-element floating-1"></div>
         <div class="floating-element floating-2"></div>
@@ -695,7 +679,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="section-header fade-in">
             <p class="section-tag">// About Me</p>
@@ -740,7 +723,6 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="section-header fade-in">
             <p class="section-tag">// Education</p>
@@ -762,7 +744,6 @@
         </div>
     </section>
 
-    <!-- Research Section -->
     <section id="research">
         <div class="section-header fade-in">
             <p class="section-tag">// Research Interests</p>
@@ -804,7 +785,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="section-header fade-in">
             <p class="section-tag">// Skills</p>
@@ -840,7 +820,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="section-header fade-in">
             <p class="section-tag">// Contact</p>
@@ -851,9 +830,9 @@
                 연구 협력이나 문의사항이 있으시면 언제든지 연락해 주세요.
             </p>
             <div class="contact-links">
-                <a href="/cdn-cgi/l/email-protection#0c6069696664623c3a4c646d62756d626b226d6f22677e" class="contact-link">
+                <a href="mailto:leejhn06@hanyang.ac.kr" class="contact-link">
                     <span class="contact-icon">📧</span>
-                    <span><span class="__cf_email__" data-cfemail="076b62626d6f693731476f66697e666960296664296c75">[email&#160;protected]</span></span>
+                    <span>leejhn06@hanyang.ac.kr</span>
                 </a>
                 <a href="tel:010-5261-9112" class="contact-link">
                     <span class="contact-icon">📱</span>
@@ -863,7 +842,7 @@
                     <span class="contact-icon">💼</span>
                     <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com" target="_blank" class="contact-link">
+                <a href="https://github.com/leejhnkoko" target="_blank" class="contact-link">
                     <span class="contact-icon">🐙</span>
                     <span>GitHub</span>
                 </a>
@@ -879,13 +858,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 이지현 (Jihyun Lee). All rights reserved.</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Scroll Animation
+    <script>
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -903,7 +880,6 @@
             observer.observe(el);
         });
 
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -917,6 +893,14 @@
             });
         });
 
-        // Navbar background on scroll
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav'
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 15, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
